@@ -1,7 +1,7 @@
 # Importiere die benötigten Bibliotheken
-import pandas as pd  # Für die Arbeit mit Tabellen (DataFrame)
+import pandas as pd  # Für die Arbeit mit Tabellen
 import requests  # Um HTTP-Anfragen zu senden
-from pyquery import PyQuery as pq  # Zum Parsen von HTML, ähnlich wie jQuery
+from pyquery import PyQuery as pq
 
 # URL der Webseite, die wir scrapen wollen
 url = "https://books.toscrape.com/catalogue/category/books_1/page-1.html"
@@ -15,7 +15,7 @@ html = response.text
 # Erstelle ein PyQuery-Objekt, um das HTML zu durchsuchen
 doc = pq(html)
 
-# Leere Liste, in der wir später die Buchinformationen speichern
+# Leere Liste, zum speichern
 books = []
 
 # Durchsuche alle <a>-Tags innerhalb von <h3>-Tags
